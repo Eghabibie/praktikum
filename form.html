@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9f9f9;
+        }
+
+        form {
+        max-width: 500px;
+        width: 100%;
+        padding: 15px;
+        background-color: beige;
+        border: 1px solid;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            margin-top: 8px;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            display: flex;
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            gap: 10px;
+        }
+
+        button {
+            font-family: 'Poppins', sans-serif;
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            background-color: coral;
+            color: beige;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: bisque;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="pre-loader">
+    <div id="loader-logo"></div>
+    <div id="loader-circle"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
+    <form action="proses_data.php" method="post">
+        <label for="nama">Nama Tim</label>
+        <input type="text" id="nama" name="nama" required placeholder="Nama Tim" >
+
+        <label for="umur">Jumlah</label>
+        <input type="number" id="Jumlah" name="Jumlah" required placeholder="Jumlah Anggota">
+
+        <label for="alamat">Asal Negara</label>
+        <input type="text" id="AsalNegara" name="AsalNegara" required placeholder="Asal Negara">
+
+        <label for="no_telepon">Nomor Telepon</label>
+        <input type="tel" id="tel" name="tel" required placeholder="Nomor Telepon">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Email">
+ 
+        <button for="submit">Kirim</button>
+    </form>
+</body>
+</html>
